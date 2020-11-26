@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="container my-5">
+<h2>Recipes</h2>
+<ul>
+    <li>Mushroom pie</li>
+    <li>Veg curry</li>
+</ul>
+<form>
+<label for="recipe">Add a new recipe:</label>
+<div class="input-group">
+    <input type="text" class="form-control" id="recipe" required>
+    <div class="input-gropu-append">
+    <input type="submit" value="add" class="btn btn-outline-secondary">
+    </div>
+</div>
+</form>
+<br>
+<button>Unsubscribe from changes</button>
+</div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZbe3cZgx-bRmQPjAjxNK3ENWN0B_vT2U",
+    authDomain: "my-test-c28dc.firebaseapp.com",
+    databaseURL: "https://my-test-c28dc.firebaseio.com",
+    projectId: "my-test-c28dc",
+    storageBucket: "my-test-c28dc.appspot.com",
+    messagingSenderId: "321851498968",
+    appId: "1:321851498968:web:50e73c7c521ab59da2d2ad",
+    measurementId: "G-6W5G9LLEGQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
+
+<script src="sandbox.js"></script>  
+</body>
+</html> 
